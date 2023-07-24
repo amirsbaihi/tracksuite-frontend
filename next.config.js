@@ -5,7 +5,7 @@ const nextConfig = {
       return [
         {
           source: '/backend/:path*',
-          destination: (process.env.BACKEND_URL||"http://tracksuite-backend:4000")+'/:path*',
+          destination: (process.env.BACKEND_URL||"http://backend:4000")+'/:path*',
         },
       ]
     },
