@@ -1,10 +1,15 @@
 export interface Product{
+    id: string;
     title: string;
     brand: string;
     category: string;
     description: string;
-    variants:Variant[]
-    optionNames:string[]
+    variants:Variant[];
+    optionNames:string[];
+    priceRange?:number[];
+    totQuantity?:number;
+    variantNumber?:number;
+    allMedia?:string[];
   }
 
 export interface Variant{

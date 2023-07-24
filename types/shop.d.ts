@@ -2,7 +2,9 @@ export interface Shop{
     name: string;
     description: string;
     media:string[];
-    address:Address
+    address:Address;
+    productCount: number; 
+    id: string;
   }
 
   export interface Address{

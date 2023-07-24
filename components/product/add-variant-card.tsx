@@ -1,20 +1,17 @@
 "use client"
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { Box, CardActionArea } from '@mui/material';
-import { useCallback, useEffect, useState } from 'react';
-import { v4 as uuid } from "uuid";
-import TextField from '@mui/material/TextField';
+import { Variant } from '@/types/product';
 import {
   Dropzone, ExtFile, FileMosaic,
-  FullScreen,
-  ImagePreview
 } from "@files-ui/react";
-import { FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput } from '@mui/material';
+import { Box, CardActionArea, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput } from '@mui/material';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 import { useSession } from 'next-auth/react';
-import { Variant } from '@/types/product';
+import * as React from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { v4 as uuid } from "uuid";
 
 
 export default function AddVariantCard({ onVariantsSubmitted, formSubmitted }:{ onVariantsSubmitted:Function, formSubmitted:boolean }) {
@@ -208,12 +205,6 @@ function AddVariantForm({ closeCallback, keyValue, variants, setVariants }:{ clo
             />
           ))}
         </Dropzone>
-        <FullScreen
-          open={imageSrc !== undefined}
-          onClose={() => setImageSrc(undefined)}
-        >
-          <ImagePreview src={imageSrc} />
-        </FullScreen>
 
       </div>
     </Box>
