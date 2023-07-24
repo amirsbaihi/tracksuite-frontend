@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
 
 import { gql } from "@apollo/client";
-import ShopCard from "@/components/counter-card";
+import ShopCard from "@/components/shop/shop-card";
 import { Shop } from "@/types/shop";
 
 const query = gql`

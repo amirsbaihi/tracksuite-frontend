@@ -1,13 +1,12 @@
 
 "use client"
-import { useSession } from "next-auth/react"
-import { useRouter } from 'next/navigation'
 import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
+import { useSession } from "next-auth/react";
+import { useRouter } from 'next/navigation';
 
-import { gql } from "@apollo/client";
-import ProductCard from "@/components/product-card";
-import ProductPage from "@/components/product-page";
+import ProductPage from "@/components/product/product-page";
 import { Product } from "@/types/product";
+import { gql } from "@apollo/client";
 
 const query = gql`query Product($id: String!) {
     product(id:$id){

@@ -4,8 +4,8 @@ import { useRouter } from "next/navigation";
 import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
 
 import { gql } from "@apollo/client";
-import ProductCard from "@/components/product-card";
-import AddProductCard from "@/components/add-product-card";
+import ProductCard from "@/components/product/product-card";
+import AddProductCard from "@/components/product/add-product-card";
 import { Grid } from "@mui/material";
 import { Product } from "@/types/product";
 
