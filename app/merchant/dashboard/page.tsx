@@ -29,7 +29,7 @@ export default function DashboardPage() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Link href="/products" passHref>
+            <Link href="/merchant/products" passHref>
               <Button size="small">Vai ai prodotti</Button>
             </Link>
           </CardActions>
@@ -50,7 +50,7 @@ export default function DashboardPage() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Link href="/shops" passHref>
+            <Link href="/merchant/shops" passHref>
               <Button size="small">Vai ai negozi</Button>
             </Link>
           </CardActions>

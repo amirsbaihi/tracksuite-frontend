@@ -21,10 +21,10 @@ import { authAtom, authDefault } from "@/components/atoms/auth";
 
 
 const navigation = [
-  { name: 'Dashboard', href: '/dashboard', current: true },
-  { name: 'Negozi', href: '/shops', current: false },
-  { name: 'Prodotti', href: '/products', current: false },
-  { name: 'Import', href: '/import', current: false },
+  { name: 'Dashboard', href: '/merchant/dashboard', current: true },
+  { name: 'Negozi', href: '/merchant/shops', current: false },
+  { name: 'Prodotti', href: '/merchant/products', current: false },
+  { name: 'Import', href: '/merchant/import', current: false },
 ]
 
 function ResponsiveAppBar() {

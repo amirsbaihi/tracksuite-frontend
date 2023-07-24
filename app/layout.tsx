@@ -1,17 +1,13 @@
 "use client";
 
-import "./globals.css";
-import { Inter } from "next/font/google";
-import { NextAuthProvider } from "./providers";
-import ResponsiveAppBar from "@/components/appbar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Provider } from "jotai";
-import { useAtomValue } from "jotai";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { NextAuthProvider } from "./providers";
 
+import React from "react";
 import { ApolloWrapper } from "../lib/apollo-wrapper";
-import { authAtom } from "@/components/atoms/auth";
-import React, { Suspense } from "react";
-import { Box, CircularProgress } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,23 +33,7 @@ export default function RootLayout({
             <ThemeProvider theme={darkTheme}>
               <ApolloWrapper>
                 <Provider>
-                  <ResponsiveAppBar />
-                  <Suspense
-                    fallback={
-                      <Box
-                        sx={{
-                          display: "flex",
-                          height: "100vh",
-                          alignContent: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        <CircularProgress />
-                      </Box>
-                    }
-                  >
-                    {children}
-                  </Suspense>
+                  {children}
                 </Provider>
               </ApolloWrapper>
             </ThemeProvider>

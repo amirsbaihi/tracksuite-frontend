@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default function ProductCard({ title, category, price, quantity, image, variantNumber, id }: { title: string, category: string, price: string, quantity: number, image: string, variantNumber: number, id:string }) {
   return (
     <Card sx={{ width: 250, height:600, margin:5}}>
-      <Link href={"/products/"+id}>
+      <Link href={"/merchant/products/"+id}>
         <CardActionArea sx={{  display:"flex", justifyContent:"flex-start", alignItems:"flex-start", flexDirection: 'column', width: 250, height:600}}>
         <CardMedia
           component="img"

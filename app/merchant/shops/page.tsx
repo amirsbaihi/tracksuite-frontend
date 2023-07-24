@@ -37,7 +37,7 @@ export default function Shops() {
             title={shop.name}
             number={shop.productCount}
             coverImg={shop.media[0]}
-            href={"/shops/" + shop.id}
+            href={"/merchant/shops/" + shop.id}
           />
         ))}
     </div>

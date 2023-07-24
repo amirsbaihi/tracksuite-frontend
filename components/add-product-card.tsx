@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default function AddProductCard() {
   return (
   <Box sx={{ margin:5}}>
-    <Link href="/products/add" passHref><Card sx={{ width: 250, height:600, display: 'flex', alignContent: 'center', justifyContent: 'center', margin: "auto"}}>
+    <Link href="/merchant/products/add" passHref><Card sx={{ width: 250, height:600, display: 'flex', alignContent: 'center', justifyContent: 'center', margin: "auto"}}>
       <CardActionArea ><Box sx={{justifyContent: 'center', display: 'flex'}}>
         <CardContent >
         

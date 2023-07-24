@@ -37,7 +37,7 @@ export default function SignIn() {
           userId: session.user.id,
         });
 
-      redirect("/dashboard");
+      redirect("/merchant/dashboard");
     }
   }, [session, auth]);
   return (

@@ -11,7 +11,7 @@ import { authAtom } from "@/components/atoms/auth";
 export default function Home() {
   const auth = useAtomValue(authAtom)
   if(auth.isLoggedIn)
-    redirect('/dashboard')
+    redirect('/merchant/dashboard')
   else
     redirect('/login')
   
